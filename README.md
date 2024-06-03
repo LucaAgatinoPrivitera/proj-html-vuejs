@@ -12,8 +12,8 @@ Utilizziamo Bootstrap e FontAwesome:
 Componenti: 
     PageHeader: Navbar (Dihep)
 
-    PageMain: Carosello, Search-Car( Luca)
-              Card-auto, Info-Car (Francesco)
+    PageMain: Carosello, SearchCar( Luca)
+              CardAuto, InfoCar (Francesco)
               Customer e Recent (Davide)
 
     PageFooter: Footer (Dihep)
