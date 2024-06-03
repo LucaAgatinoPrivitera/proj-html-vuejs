@@ -1,9 +1,15 @@
 <script>
-// import Header from './components/Header.vue'
+import Carosello from './components/Carosello.vue'
+
+export default{
+  components:{
+    Carosello
+  }
+}
 </script>
 
 <template>
-
+  <Carosello />
 </template>
 
 <style scoped>
