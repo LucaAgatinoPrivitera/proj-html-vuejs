@@ -17,6 +17,7 @@ Componenti:
               Customer e Recent (Davide)
 
     PageFooter: Footer (Dihep)
+(I componenti PageHeader - PageFooter li abbamo tutti, i sotto componenti invece li prendiamo da github)
 
 Utilizziamo uno store.js per immagazzinare i vari dati.
 
