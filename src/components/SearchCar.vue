@@ -13,59 +13,102 @@ export default {
 </script>
 
 <template>
+  <!-- Ricerca Auto -->
+  <div class="w-75 m-auto d-flex mt-5 mb-3">
+    <div class="widthInput">
+      <input class="text-center p-3" type="text" placeholder="Keywords">
+    </div>
 
-  <div id="caroselloHeight" class="position-relative prova">
-      <!-- <div id=" caroselloHeight" class="position-relative">
-    <img id="backgroundImage" :src="store.Carosello[store.number].firstImage" alt=""> -->
+    <div class="widthInput">
+      <input class="text-center p-3" type="text" placeholder="Location">
+    </div>
+
+    <div class="widthInput">
+      <select class="form-select p-3" aria-label="Default select example">
+        <option selected class="text-center d-flex">All categories</option>
+        <option class="d-flex" v-for="category in store.SearchCar.AllCategories" value="i">{{ category }}
+        </option>
+      </select>
+    </div>
+
+    <div class="widthInput">
+      <select class="form-select p-3" aria-label="Default select example">
+        <option selected class="text-center">Brand</option>
+        <option class="d-flex" v-for="brand in store.SearchCar.Brand" value="i">{{ brand }}</option>
+      </select>
+    </div>
+
+    <div class="widthInput">
+      <select class="form-select p-3" aria-label="Default select example">
+        <option selected class="text-center">Fuel Type</option>
+        <option class="d-flex" v-for="fuel in store.SearchCar.FuelType" value="i">{{ fuel }}</option>
+      </select>
+    </div>
+
+    <div class="widthInput">
+      <select class="form-select p-3" aria-label="Default select example">
+        <option selected class="text-center">Transmission</option>
+        <option class="d-flex" v-for="transmission in store.SearchCar.Transmission" value="i">{{ transmission }}
+        </option>
+      </select>
+    </div>
+
+    <div class="widthInput">
+      <select class="form-select p-3" aria-label="Default select example">
+        <option selected class="text-center">Status</option>
+        <option class="custom-option" v-for="status in store.SearchCar.Status" value="i">{{ status }}</option>
+      </select>
+    </div>
+
+    <div class="widthInput">
+      <button type="button" class="btn btn-dark p-3">Dark</button>
+    </div>
+
+    <div id="prova"></div>
 
   </div>
+
+  <!-- Modellini in basso -->
+  <div>
+
+    <div>
+      <img src="" alt="">
+      <h3></h3>
+      <p></p>
+    </div>
+
+  </div>
+
+
 </template>
 
 <style scoped>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
+#prova {
+  height: 100vh;
 }
 
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
+::placeholder {
+  text-align: center;
 }
 
-#caroselloHeight {
-  height: 90vh;
+.widthInput {
+  width: 12.5%;
+  margin-right: 1rem;
 }
 
-.prova {
-  background-position: bottom;
-}
-
-#backgroundImage {
-  position: absolute;
+.widthInput * {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.textWidth {
-  width: 30%;
-}
-
-h1,
-p,
-i {
-  color: var(--site-white) !important;
-}
-
-#bottoni {
-  position: absolute;
-  width: 100%;
-  transform: translateY(-50%, -50%);
-  z-index: 1;
 }
 
 .cursorPointer {
   cursor: pointer;
+}
+
+.custom-option {
+  display: inline-block !important;
+  width: 20% !important;
+  /* Adjust the width as needed */
+  margin: 1% !important;
+  /* Adjust the margin as needed */
 }
 </style>
