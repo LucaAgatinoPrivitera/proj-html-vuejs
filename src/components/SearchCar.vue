@@ -61,7 +61,7 @@ export default {
     </div>
 
     <div class="widthInput">
-      <button type="button" class="btn btn-dark p-3">Dark</button>
+      <button type="button" class="btn btn-dark p-3">Search</button>
     </div>
 
   </div>
@@ -70,8 +70,8 @@ export default {
   <div class="w-75 m-auto d-flex ombraModels">
 
     <div class="model bordoModel" v-for="prova in store.Models">
-      <img class="w-75 d-block m-auto" :src="prova.Immagine" alt="">
-      <h3>{{ prova.Titolo }}</h3>
+      <img class="w-75 d-block m-auto cursorPointer" :src="prova.Immagine" alt="">
+      <h3 class="cursorPointer">{{ prova.Titolo }}</h3>
       <p>{{ prova.Sottotitolo }}</p>
     </div>
 
