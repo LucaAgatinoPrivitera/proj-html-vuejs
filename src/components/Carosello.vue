@@ -33,23 +33,23 @@ export default {
 </script>
 
 <template>
-  <!-- <div id="caroselloHeight" class="position-relative"
-    v-bind:style="{ 'background-image': `url(${store.CaroselloImages.firstImage})` }"> -->
-  <div id="caroselloHeight" class="position-relative">
-    <img id="backgroundImage" :src="store.Carosello[store.number].firstImage" alt="">
+  <div id="caroselloHeight" class="position-relative prova"
+    v-bind:style="{ 'background-image': `url(${store.Carosello[store.number].firstImage})` }">
+    <!-- <div id="caroselloHeight" class="position-relative">
+    <img id="backgroundImage" :src="store.Carosello[store.number].firstImage" alt=""> -->
 
-    <div id="bottoni" class="d-flex justify-content-between align-items-center px-5 h-100">
+    <div id="bottoni" class="d-flex justify-content-between align-items-center px-4 h-100">
       <i class="fa-solid fa-chevron-left previous cursorPointer" @click="CaroselloIndietro"></i>
       <i class="fa-solid fa-chevron-right next cursorPointer" @click="caroselloAvanti"></i>
     </div>
 
-    <div class="w-75 h-100 d-flex m-auto align-items-center">
+    <div class="w-75 h-100 position-relative d-flex m-auto align-items-center z-3">
       <div class="w-25">
-        <h1>{{ store.Carosello[0].CaroselloTitolo }}</h1>
-        <p>{{ store.CaroselloSottotitolo }}</p>
-        <div class="d-inline-flex align-items-center gap-2 me-5 cursorPointer">
+        <h1 class="fw-bold">{{ store.Carosello[0].CaroselloTitolo }}</h1>
+        <p class="fw-bold">{{ store.CaroselloSottotitolo }}</p>
+        <div class="d-inline-flex align-items-center gap-2 me-5 cursorPointer fw-bold">
           <p class="m-0">Learn More</p>
-          <i class="fa-solid fa-arrow-right m"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
 
@@ -62,6 +62,10 @@ export default {
 <style scoped>
 #caroselloHeight {
   height: 80vh;
+}
+
+.prova{
+  background-position: bottom;
 }
 
 #backgroundImage {
