@@ -77,15 +77,11 @@ export default {
 
   </div>
 
-  <div id="prova"></div>
 
 
 </template>
 
 <style scoped>
-#prova {
-  height: 100vh;
-}
 
 ::placeholder {
   text-align: center;
