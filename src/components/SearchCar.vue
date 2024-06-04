@@ -16,11 +16,11 @@ export default {
   <!-- Ricerca Auto -->
   <div class="w-75 m-auto d-flex mt-5 mb-3">
     <div class="widthInput">
-      <input class="text-center p-3" type="text" placeholder="Keywords">
+      <input class="text-center p-3 border" type="text" placeholder="Keywords">
     </div>
 
     <div class="widthInput">
-      <input class="text-center p-3" type="text" placeholder="Location">
+      <input class="text-center p-3 border" type="text" placeholder="Location">
     </div>
 
     <div class="widthInput">
@@ -64,20 +64,20 @@ export default {
       <button type="button" class="btn btn-dark p-3">Dark</button>
     </div>
 
-    <div id="prova"></div>
-
   </div>
 
   <!-- Modellini in basso -->
-  <div>
+  <div class="w-75 m-auto d-flex ombraModels">
 
-    <div>
-      <img src="" alt="">
-      <h3></h3>
-      <p></p>
+    <div class="model bordoModel" v-for="prova in store.Models">
+      <img class="w-75 d-block m-auto" :src="prova.Immagine" alt="">
+      <h3>{{ prova.Titolo }}</h3>
+      <p>{{ prova.Sottotitolo }}</p>
     </div>
 
   </div>
+
+  <div id="prova"></div>
 
 
 </template>
@@ -110,5 +110,22 @@ export default {
   /* Adjust the width as needed */
   margin: 1% !important;
   /* Adjust the margin as needed */
+}
+
+.model {
+  width: 16.66%;
+}
+
+.model * {
+  text-align: center;
+}
+
+.ombraModels {
+  box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.212) !important;
+}
+
+.bordoModel {
+  /* border: 1px solid rgba(158, 157, 157, 0.014); */
+  box-shadow: 0 0rem 0.1rem rgba(0, 0, 0, 0.329) !important;
 }
 </style>

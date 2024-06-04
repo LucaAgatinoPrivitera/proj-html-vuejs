@@ -56,7 +56,40 @@ const iMieiDati = reactive({
             'From The Gallery',
             'New'
         ]
-    }
+    },
+    Models: [
+        {
+            Immagine: './src/assets/Img/cabrio.jpg',
+            Titolo: 'Cabrio',
+            Sottotitolo: '3 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/coupe.jpg',
+            Titolo: 'Coupe',
+            Sottotitolo: '0 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/hatchback.jpg',
+            Titolo: 'Hathback',
+            Sottotitolo: '2 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Pickup.jpg',
+            Titolo: 'Pick up',
+            Sottotitolo: '0 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Sedan.jpg',
+            Titolo: 'Sedan',
+            Sottotitolo: '3 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Suv.jpg',
+            Titolo: 'Suv',
+            Sottotitolo: '4 Listings'
+        },
+
+    ]
 
 });
 
