@@ -60,7 +60,7 @@ export default {
           <h1 class="fw-bold transition position-absolute widthImg" :class="{ 'opacity-100': caroselloImg === i, 'opacity-0': caroselloImg !== i }" v-for="text, i in store.Carosello">{{ text.CaroselloTitolo }}</h1>
           <h1 class="fw-bold transition opacity-0">{{ store.Carosello[store.number].CaroselloTitolo }}</h1>
           <p class="fw-bold">{{ store.CaroselloSottotitolo }}</p>
-          <div class="d-inline-flex align-items-center gap-2 me-5 cursorPointer fw-bold">
+          <div class="d-inline-flex align-items-center gap-2 ms-5 cursorPointer fw-bold">
             <p class="m-0">Learn More</p>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
