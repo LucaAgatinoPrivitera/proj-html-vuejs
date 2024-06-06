@@ -24,3 +24,6 @@ Utilizziamo uno store.js per immagazzinare i vari dati.
 Tutte le immagini le abbiamo messe nella cartella src/assets, creiamo le cartelle Icone e Img
 
 Lo store.js lo abbiamo messo in src/data/
+
+Da chiedere: la questione del me e ms che sono invertiti
+
