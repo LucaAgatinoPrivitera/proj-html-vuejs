@@ -84,7 +84,7 @@ export default {
 }
 
 #caroselloHeight {
-  height: 90vh;
+  height: calc( 100vh - 5rem);
 }
 
 .imgBack {
