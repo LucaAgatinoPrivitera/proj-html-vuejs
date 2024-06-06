@@ -57,7 +57,9 @@ export default {
 
       <div class="w-75 h-100 position-relative d-flex m-auto align-items-center z-3">
         <div class="textWidth">
-          <h1 class="fw-bold transition position-absolute widthImg" :class="{ 'opacity-100': caroselloImg === i, 'opacity-0': caroselloImg !== i }" v-for="text, i in store.Carosello">{{ text.CaroselloTitolo }}</h1>
+          <h1 class="fw-bold transition position-absolute widthImg"
+            :class="{ 'opacity-100': caroselloImg === i, 'opacity-0': caroselloImg !== i }"
+            v-for="text, i in store.Carosello">{{ text.CaroselloTitolo }}</h1>
           <h1 class="fw-bold transition opacity-0">{{ store.Carosello[store.number].CaroselloTitolo }}</h1>
           <p class="fw-bold">{{ store.CaroselloSottotitolo }}</p>
           <div class="d-inline-flex align-items-center gap-2 ms-5 cursorPointer fw-bold">
@@ -84,7 +86,7 @@ export default {
 }
 
 #caroselloHeight {
-  height: calc( 100vh - 5rem);
+  height: calc(100vh - 5rem);
 }
 
 .imgBack {
@@ -94,7 +96,8 @@ export default {
   object-position: bottom;
   transition: 0.5s ease-in-out;
 }
-.widthImg{
+
+.widthImg {
   width: 33%;
 }
 

@@ -1,5 +1,6 @@
 <script>
 import Store from "../data/store.js";
+//data in piccolo
 export default {
 	name: "Customer",
 	data() {
@@ -66,22 +67,14 @@ export default {
 				</div>
 			</div>
 			<div class="d-flex justify-content-center">
-				<div
-					:class="{
-						btnBlack: clickPrev,
-						btnGrey: !clickPrev,
-					}"
-					class="my_btn_customer me-1"
-					@click="previous()"
-				></div>
-				<div
-					:class="{
-						btnBlack: clickNext,
-						btnGrey: !clickNext,
-					}"
-					class="my_btn_customer"
-					@click="next()"
-				></div>
+				<div :class="{
+					btnBlack: clickPrev,
+					btnGrey: !clickPrev,
+				}" class="my_btn_customer me-1" @click="previous()"></div>
+				<div :class="{
+					btnBlack: clickNext,
+					btnGrey: !clickNext,
+				}" class="my_btn_customer" @click="next()"></div>
 			</div>
 		</div>
 	</div>
@@ -130,5 +123,4 @@ img {
 	width: 90px;
 	transition: all 500ms;
 }
-
 </style>

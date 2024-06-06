@@ -10,6 +10,10 @@ export default {
     data() {
         return {
             store,
+            animable24: 0,
+            animable240: 0,
+            animable24Timer: null,
+            animable240Timer: null
 
         }
     },
@@ -18,23 +22,57 @@ export default {
             let risultato = new URL(`../assets/Img/${path}`, import.meta.url);
             return risultato.href;
         },
+
+        getNumbers(min, max, nomeDelData, ms) {
+            this[nomeDelData] = min
+            let nomeDelTimer = nomeDelData + 'Timer'
+            this[nomeDelTimer] = setInterval(() => {
+                this[nomeDelData]++
+                if (this[nomeDelData] == max) {
+                    clearInterval(this[nomeDelTimer])
+
+                }
+            }, ms);
+
+        },
+
+        //controlla se l elemento e` tra il top(0) e la fine della viewport.
+        isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.top <=
+                (window.innerHeight || document.documentElement.clientHeight)
+            );
+        },
     },
     created() {
 
     },
     mounted() {
+        //allo scroll,  
+        window.addEventListener("scroll", () => {
+            //se l elemento e` tra il top(0) e la fine della viewport.
+            if (this.isElementInViewport(document.getElementById('scroll'))) {
+                if (!this.animable24Timer) {
+                    this.getNumbers(0, 24, 'animable24', 100)
+                }
+                if (!this.animable240Timer) {
+                    this.getNumbers(0, 240, 'animable240', 10)
+                }
+            }
+        });
 
     },
     computed: {
 
     },
 }
-
 </script>
 
 <template>
 
-    <div class=" w-75 mx-auto py-2">
+    <div class="w-75 mx-auto py-2">
 
         <div class="row justify-content-center align-items-center">
 
@@ -43,11 +81,11 @@ export default {
                 <img class="position-absolute top-0 end-0" style="width: 100%;" :src="getImg('aoutcar-about-1.png')"
                     alt="">
                 <div class="twoForTwo position-absolute bg-dark leftCircle text-center p-2">
-                    <h4 class="fw-bolder">24</h4>
+                    <h4 class="fw-bolder">{{ animable24 }} </h4>
                     <p class="my_fs">Years of Experience</p>
                 </div>
-                <div class="twoForTwo position-absolute bg-dark rightCircle text-center p-2">
-                    <h4 class="fw-bolder">240</h4>
+                <div id="scroll" class="twoForTwo position-absolute bg-dark rightCircle text-center p-2">
+                    <h4 class="fw-bolder">{{ animable240 }}</h4>
                     <p class="my_fs">Special Expert Team</p>
                 </div>
 

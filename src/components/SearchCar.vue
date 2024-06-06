@@ -82,7 +82,6 @@ export default {
 </template>
 
 <style scoped>
-
 ::placeholder {
   text-align: center;
 }

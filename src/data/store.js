@@ -1,95 +1,6 @@
 import { reactive } from 'vue';
 
 const iMieiDati = reactive({
-    // Componente Carosello
-    CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
-    CaroselloSottotitolo: 'Find the right price and dealer.',
-    Carosello: [
-        {
-            CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
-            firstImage: './src/assets/Img/slider-autocar-5.jpg',
-        },
-        {
-            CaroselloTitolo: 'The Easiest Way to Buy And Sell Vehicles',
-            firstImage: './src/assets/Img/slider-autocar-6.jpg',
-        }
-    ],
-    number: 0,
-
-    // Componente SearchCar
-    SearchCar: {
-        AllCategories: [
-            'Cabrio',
-            'Coupe',
-            'Hatchback',
-            'Pick up',
-            'Seden',
-            'Suv'
-        ]
-        ,
-        Brand: [
-            'Audi',
-            'BMW',
-            'Ford',
-            'Hyundai',
-            'Opel',
-            'Seat',
-            'Skoda',
-            'Toyota',
-            'Volswagen'
-        ],
-        FuelType: [
-            'Diesel',
-            'Electric',
-            'Gasoline',
-            'LPG'
-        ],
-        Transmission: [
-            'Automatic',
-            'Manual',
-            'Semiautomatic',
-            'Touch'
-        ],
-        Status: [
-            '2nd Hand',
-            'By Owner',
-            'From The Gallery',
-            'New'
-        ]
-    },
-    Models: [
-        {
-            Immagine: './src/assets/Img/cabrio.jpg',
-            Titolo: 'Cabrio',
-            Sottotitolo: '3 Listings'
-        },
-        {
-            Immagine: './src/assets/Img/coupe.jpg',
-            Titolo: 'Coupe',
-            Sottotitolo: '0 Listings'
-        },
-        {
-            Immagine: './src/assets/Img/hatchback.jpg',
-            Titolo: 'Hathback',
-            Sottotitolo: '2 Listings'
-        },
-        {
-            Immagine: './src/assets/Img/Pickup.jpg',
-            Titolo: 'Pick up',
-            Sottotitolo: '0 Listings'
-        },
-        {
-            Immagine: './src/assets/Img/Sedan.jpg',
-            Titolo: 'Sedan',
-            Sottotitolo: '3 Listings'
-        },
-        {
-            Immagine: './src/assets/Img/Suv.jpg',
-            Titolo: 'Suv',
-            Sottotitolo: '4 Listings'
-        },
-    ],
-
     cardLists: [
         {
             marchio: 'BMW',
@@ -130,7 +41,7 @@ const iMieiDati = reactive({
         {
             marchio: 'Seat',
             modello: 'Seat Arona',
-            tipo: 'Suv',
+            tipo: 'SUV',
             prezzo: '60.000',
             carburante: 'Gasoline',
             immagine: 'makyajli-2022-seat-arona-1-400x300.jpg',
@@ -165,6 +76,7 @@ const iMieiDati = reactive({
         },
     ],
 
+    // DAVIDE
     customer: {
         title: "What Are Our Customer Saying ?",
         subtitle: "Opinion from our Happy Customers.",
@@ -252,6 +164,189 @@ const iMieiDati = reactive({
         ],
     },
 
+    //LUCA
+    CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
+    CaroselloSottotitolo: 'Find the right price and dealer.',
+    Carosello: [
+        {
+            CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
+            firstImage: './src/assets/Img/slider-autocar-5.jpg',
+        },
+        {
+            CaroselloTitolo: 'The Easiest Way to Buy And Sell Vehicles',
+            firstImage: './src/assets/Img/slider-autocar-6.jpg',
+        }
+    ],
+    number: 0,
+    SearchCar: {
+        AllCategories: [
+            'Cabrio',
+            'Coupe',
+            'Hatchback',
+            'Pick up',
+            'Seden',
+            'Suv'
+        ]
+        ,
+        Brand: [
+            'Audi',
+            'BMW',
+            'Ford',
+            'Hyundai',
+            'Opel',
+            'Seat',
+            'Skoda',
+            'Toyota',
+            'Volswagen'
+        ],
+        FuelType: [
+            'Diesel',
+            'Electric',
+            'Gasoline',
+            'LPG'
+        ],
+        Transmission: [
+            'Automatic',
+            'Manual',
+            'Semiautomatic',
+            'Touch'
+        ],
+        Status: [
+            '2nd Hand',
+            'By Owner',
+            'From The Gallery',
+            'New'
+        ]
+    },
+    Models: [
+        {
+            Immagine: './src/assets/Img/cabrio.jpg',
+            Titolo: 'Cabrio',
+            Sottotitolo: '3 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/coupe.jpg',
+            Titolo: 'Coupe',
+            Sottotitolo: '0 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/hatchback.jpg',
+            Titolo: 'Hathback',
+            Sottotitolo: '2 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Pickup.jpg',
+            Titolo: 'Pick up',
+            Sottotitolo: '0 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Sedan.jpg',
+            Titolo: 'Sedan',
+            Sottotitolo: '3 Listings'
+        },
+        {
+            Immagine: './src/assets/Img/Suv.jpg',
+            Titolo: 'Suv',
+            Sottotitolo: '4 Listings'
+        },
+    ],
+
+    navbarLogo: `logo-autocar11.png`,
+    footerLogo: `logo-footer-autocar11.png`,
+
+    headerData: {
+        navbarLinks: [
+            { text: `Home`, link: `https://example.com` },
+            { text: `About Us`, link: `https://example.com` },
+            { text: `Vehicles`, link: `https://example.com` },
+            { text: `Dealers`, link: `https://example.com` },
+            { text: `Packages`, link: `https://example.com` },
+            { text: `Blog`, link: `https://example.com` },
+            { text: `Contact`, link: `https://example.com` }
+        ]
+    },
+
+
+    footerData: {
+        acSocials: {
+            facebook: {
+                icon: `fa-brands fa-facebook-f`,
+                link: `https://example.com`
+            },
+            instagram: {
+                icon: `fa-brands fa-instagram`,
+                link: `https://example.com`
+            },
+            twitter: {
+                icon: `fa-brands fa-twitter`,
+                link: `https://example.com`
+            }
+        },
+        //Ogni sezione del footer ha i suoi dati
+        autocarInfo:
+        {
+            acLocation: {
+                text: `New Jersey, USA`,
+                icon: `fa-solid fa-location-dot`
+            },
+            acEmail: {
+                text: `example@example.com`,
+                icon: `fa-regular fa-envelope`
+            },
+            acPhone: {
+                text: `+1 (234) 567 89 10`,
+                icon: `fa-solid fa-phone`
+            }
+        },
+        autocarAccount:
+        {
+            myAccount: {
+                name: `My Account`,
+                link: `https://example.com`
+            },
+            checkout: {
+                name: `Checkout`,
+                link: `https://example.com`
+            },
+            cart: {
+                name: `Cart`,
+                link: `https://example.com`
+            },
+            packages: {
+                name: `Packages`,
+                link: `https://example.com`
+            },
+            addCar: {
+                name: `Add Car`,
+                link: `https://example.com`
+            }
+        },
+        autocarQuickLinks:
+        {
+            home: {
+                name: `Home`,
+                link: `https://example.com`
+            },
+            aboutUs: {
+                name: `About us`,
+                link: `https://example.com`
+            },
+            blog: {
+                name: `Blog`,
+                link: `https://example.com`
+            },
+            contact: {
+                name: `Contact`,
+                link: `https://example.com`
+            },
+            refundAndReturn: {
+                name: `Refund & Returns`,
+                link: `https://example.com`
+            }
+        },
+        pageCredits: "2022 Autocar - All Rigthts Reserved"
+    }
 });
+
 
 export default iMieiDati
