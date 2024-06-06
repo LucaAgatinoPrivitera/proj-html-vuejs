@@ -71,7 +71,7 @@ export default {
             </section>
         </div>
 
-        <div id="footerCredits">
+        <div id="footerCredits" class="mb-0 pb-2">
             <i class="fa-regular fa-copyright"></i>
             {{ store.footerData.pageCredits }}
         </div>
