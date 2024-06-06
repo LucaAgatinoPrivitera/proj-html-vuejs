@@ -29,7 +29,7 @@ Da chiedere: la questione del me e ms che sono invertiti
 
 
 Il carosello è stato impostato seguendo il componente che ci è stato fornito. 
-    Al click viene cambiata l'immagine e anche il titolo.
+    Al click viene cambiata l'immagine e anche il titolo, con una transizione di 0,5 secondi per rendere il tutto più bello esteticamente.
     I dati sono stati aggiunti tutti andando ad utilizzare lo store.js che abbiamo in comune.
 
 Il searchCar è stato impostato seguendo il componente che ci è stato fornito.
