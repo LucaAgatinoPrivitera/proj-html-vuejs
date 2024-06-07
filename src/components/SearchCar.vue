@@ -8,6 +8,12 @@ export default {
     }
   },
   methods: {
+    getImgPath(path) {
+            let risultato = new URL(`../assets/Img/${path}`, import.meta.url);
+            return risultato.href;
+        },
+
+        // da ricordare IMPORTANTE
   }
 }
 </script>
@@ -70,7 +76,7 @@ export default {
   <div class="w-75 m-auto d-flex ombraModels">
 
     <div class="model bordoModel" v-for="prova in store.Models">
-      <img class="w-75 d-block m-auto cursorPointer" :src="prova.Immagine" alt="">
+      <img class="w-75 d-block m-auto cursorPointer" :src="getImgPath(prova.Immagine)" alt="">
       <h3 class="cursorPointer">{{ prova.Titolo }}</h3>
       <p>{{ prova.Sottotitolo }}</p>
     </div>

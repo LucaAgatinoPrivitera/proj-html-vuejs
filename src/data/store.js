@@ -170,11 +170,11 @@ const iMieiDati = reactive({
     Carosello: [
         {
             CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
-            firstImage: './src/assets/Img/slider-autocar-5.jpg',
+            firstImage: 'slider-autocar-5.jpg',
         },
         {
             CaroselloTitolo: 'The Easiest Way to Buy And Sell Vehicles',
-            firstImage: './src/assets/Img/slider-autocar-6.jpg',
+            firstImage: 'slider-autocar-6.jpg',
         }
     ],
     number: 0,
@@ -220,32 +220,32 @@ const iMieiDati = reactive({
     },
     Models: [
         {
-            Immagine: './src/assets/Img/cabrio.jpg',
+            Immagine: 'cabrio.jpg',
             Titolo: 'Cabrio',
             Sottotitolo: '3 Listings'
         },
         {
-            Immagine: './src/assets/Img/coupe.jpg',
+            Immagine: 'coupe.jpg',
             Titolo: 'Coupe',
             Sottotitolo: '0 Listings'
         },
         {
-            Immagine: './src/assets/Img/hatchback.jpg',
+            Immagine: 'hatchback.jpg',
             Titolo: 'Hathback',
             Sottotitolo: '2 Listings'
         },
         {
-            Immagine: './src/assets/Img/Pickup.jpg',
+            Immagine: 'pickup.jpg',
             Titolo: 'Pick up',
             Sottotitolo: '0 Listings'
         },
         {
-            Immagine: './src/assets/Img/Sedan.jpg',
+            Immagine: 'sedan.jpg',
             Titolo: 'Sedan',
             Sottotitolo: '3 Listings'
         },
         {
-            Immagine: './src/assets/Img/Suv.jpg',
+            Immagine: 'suv.jpg',
             Titolo: 'Suv',
             Sottotitolo: '4 Listings'
         },
